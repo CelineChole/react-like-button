@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import LikeButton from './LikeButton'
+import LikeButtonClass from './LikeButtonClass'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <img src="like-heart.png" />
+       <img src="like-heart.png" alt="heart in a bubble" />
       </header>
-      <LikeButton />
+      <LikeButtonClass />
     </div>
   );
 }
