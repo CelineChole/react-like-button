@@ -8,7 +8,7 @@ class LikeButtonClass extends Component {
       }
     }
 
-    handleLike = (e) => {
+    setCount = (e) => {
       let newCount = this.state.count + 1
       this.setState({
         count: newCount
@@ -18,7 +18,7 @@ class LikeButtonClass extends Component {
   render() {
     return (
       <div>
-        <button id="like-img" onClick={this.handleLike}>
+        <button id="like-img" onClick={this.setCount}>
           <img  src="heart-like.jpg" alt="red heart" />
         </button>
           <div>Like: {this.state.count}</div>
