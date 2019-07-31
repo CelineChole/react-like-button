@@ -4,14 +4,14 @@ class LikeButtonClass extends Component {
     constructor() {
       super()
       this.state = {
-        likeCounter: 0
+        count: 0
       }
     }
 
     handleLike = (e) => {
-      let newLikeCounter = this.state.likeCounter + 1
+      let newCount = this.state.count + 1
       this.setState({
-        likeCounter: newLikeCounter
+        count: newCount
       })
     }
 
@@ -21,7 +21,7 @@ class LikeButtonClass extends Component {
         <button id="like-img" onClick={this.handleLike}>
           <img  src="heart-like.jpg" alt="red heart" />
         </button>
-          <div>Like: {this.state.likeCounter}</div>
+          <div>Like: {this.state.count}</div>
       </div>)
   }
 }

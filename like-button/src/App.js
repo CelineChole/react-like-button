@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import LikeButtonClass from './LikeButtonClass'
+import LikeButtonFunc from './LikeButtonFunc'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
        <img src="like-heart.png" alt="heart in a bubble" />
       </header>
       <LikeButtonClass />
+      <LikeButtonFunc />
     </div>
   );
 }
