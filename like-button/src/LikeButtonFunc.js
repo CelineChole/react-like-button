@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 // We import the useState Hook from React. It lets us keep local state in a function component.
 
-function likeButtonFunc() {
-  const [count, setCount] = useState(0);
+const LikeButtonFunc = () => {
+  const [count, setCount] =  useState(0);
   
   return (
     <div>
@@ -14,4 +14,4 @@ function likeButtonFunc() {
   )
 };
 
-export default likeButtonFunc;
+export default LikeButtonFunc;

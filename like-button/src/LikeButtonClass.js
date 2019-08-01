@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const LIKE_KEY = "LIKE_IN_CLASS";
+
 class LikeButtonClass extends Component {
     constructor() {
       super()
@@ -8,12 +10,26 @@ class LikeButtonClass extends Component {
       }
     }
 
+    componentDidMount = () => {
+      const likes = localStorage.getItem(LIKE_KEY);
+
+      if(!likes) {
+        localStorage.setItem(LIKE_KEY, this.state.count);
+      } else {
+        this.setState({
+          count: parseInt(likes)
+        });
+      }
+    }
+
     setCount = (e) => {
-      let newCount = this.state.count + 1
+      let newCount = this.state.count + 1;
       this.setState({
         count: newCount
-      })
+      });
+      localStorage.setItem(LIKE_KEY, newCount)
     }
+
 
   render() {
     return (

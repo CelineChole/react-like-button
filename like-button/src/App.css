@@ -23,7 +23,7 @@
   color: #61dafb;
 }
 
-.like-img {
+#like-img > img {
   width: 30%;
 }
 
