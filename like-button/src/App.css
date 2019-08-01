@@ -55,9 +55,10 @@ button {
   border: none;
   color: white;
   padding: 15px 32px;
+  margin-bottom: 15px;
   text-align: center;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
 
 }
 
