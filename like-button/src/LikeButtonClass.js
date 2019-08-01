@@ -11,11 +11,13 @@ class LikeButtonClass extends Component {
     }
 
     componentDidMount = () => {
+      // local storage works like a dictionary with key / values
       const likes = localStorage.getItem(LIKE_KEY);
-
+      // if there is no likes in the local storage we set the count to 0
       if(!likes) {
         localStorage.setItem(LIKE_KEY, this.state.count);
       } else {
+        // otherwise we set the state with the likes from local storage
         this.setState({
           count: parseInt(likes)
         });
