@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 // We import useEffect Hook to replace repetitive component lifecycle code.
 import "./App.css";
 import LikeButtonClass from "./LikeButtonClass";
-// import LikeButtonFunc from './LikeButtonFunc'
 
 const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
   const [value, setValue] = useState(
