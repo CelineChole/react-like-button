@@ -34,10 +34,8 @@ class LikeButtonClass extends Component {
   render() {
     return (
       <div>
-        <button id="like-img" onClick={this.setCount}>
-          <img  src="heart-like.jpg" alt="red heart" />
-        </button>
-          <div>Like: {this.state.count}</div>
+        <button id="like-img" onClick={this.setCount}>I like classes</button>
+          <div>{this.state.count}</div>
       </div>)
   }
 }

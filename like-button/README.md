@@ -1,3 +1,7 @@
+# Introduction to hooks
+
+Essentially, a Hook is a special function that allows you to “hook into” React features.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
