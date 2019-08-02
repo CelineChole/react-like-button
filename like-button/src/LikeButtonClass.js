@@ -25,6 +25,12 @@ class LikeButtonClass extends Component {
     }
 
     setCount = (e) => {
+      // setState is an async function. 
+      // React may batch a bunch of setStates together. 
+      // So the value of this.state.count is the value at the time you make the request.
+      this.setState((prevState, props) => ({
+        count: prevState.count + 1
+    })); 
       let newCount = this.state.count + 1;
       this.setState({
         count: newCount
