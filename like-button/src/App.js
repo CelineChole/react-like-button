@@ -33,7 +33,7 @@ const App = () => {
         <div className="buttons">
           <div className="with-hook">
             <div>
-              <button classeName="hook-button" onClick={() => setLikes(likes + 1)}>I like hooks</button>
+              <button className="hook-button" onClick={() => setLikes(likes + 1)}>I like hooks</button>
               <div>{likes}</div>
             </div>
           </div>
