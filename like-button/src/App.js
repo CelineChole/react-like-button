@@ -13,8 +13,12 @@ const useStateWithLocalStorage = (localStorageKey, defaultValue) => {
     localStorage.getItem(localStorageKey) || defaultValue
   );
 
-  // Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.
   // you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined
+  // UseEffect runs both after the first render and after every update.
+  // In some cases, applying the effect after every render might create a performance problem.
+  // This requirement is common enough that it is built into the useEffect Hook API. 
+  // You can tell React to skip applying an effect if certain values haven’t changed between re-renders. 
+  // To do so, pass an array as an optional second argument to useEffect, here '[count]'
   useEffect(() => {
     localStorage.setItem(localStorageKey, count);
   }, [count]);
